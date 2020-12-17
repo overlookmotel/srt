@@ -9,3 +9,13 @@
 Bug fixes:
 
 * Fix `conform` function [fix]
+
+## 0.1.2
+
+Tests:
+
+* Fix tests [fix]
+
+Docs:
+
+* Fix changelog
