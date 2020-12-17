@@ -6,7 +6,7 @@
 'use strict';
 
 // Modules
-const srt = require('srt');
+const srt = require('@overlookmotel/srt');
 
 // Init
 require('./support/index.js');

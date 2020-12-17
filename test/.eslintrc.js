@@ -12,7 +12,7 @@ module.exports = {
 		'@overlookmotel/eslint-config-jest'
 	],
 	rules: {
-		'import/no-unresolved': ['error', {ignore: ['^srt$']}],
-		'node/no-missing-require': ['error', {allowModules: ['srt']}]
+		'import/no-unresolved': ['error', {ignore: ['^@overlookmotel/srt$']}],
+		'node/no-missing-require': ['error', {allowModules: ['@overlookmotel/srt']}]
 	}
 };
