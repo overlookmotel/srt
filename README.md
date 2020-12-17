@@ -50,6 +50,12 @@ Returns `{subtitles, problems}`.
 
 `problems` is array of problems encounters (same form as returned by `parse()`). `.canFix` is `false` if could not fully solve the problem.
 
+### `validate( subtitles )`
+
+Validate array of subtitles according to style guide.
+
+Returns `problems` - same as `conform()`.
+
 ### `msToTimecode( ms )`
 
 Convert milliseconds to SRT-format timecode.
