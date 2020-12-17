@@ -6,9 +6,69 @@
 
 # SRT subtitling utilities
 
+## Warning
+
+This module is intended for my personal use. It works, but has no tests at present.
+
 ## Usage
 
-This module is under development and not ready for use yet.
+### `parse( srt )`
+
+Parse SRT file as a string.
+
+It aims to be as liberal as possible and
+
+Returns `{subtitles, problems, srt}`.
+
+`subtitles` is array of subtitle objects of form `{start, end, text}`. `start` and `end` in milliseconds.
+
+`problems` is an array of objects representing problems encountered in parsing the SRT. Each object of form:
+
+```js
+{
+  index, // Index of subtitle where problem encountered
+  msg, // Description of problem
+  canFix // `true` if calling `stringify()` on the subtitles returned will create an SRT with this problem fixed
+}
+```
+
+If SRT cannot be parsed, `subtitles` will be `null` and a reason for the failure included in `problems`.
+
+`srt` is SRT file as text without any corrections made, expect normalizing line breaks to consistent `\n`.
+
+### `stringify( subtitles )`
+
+Stringify array of subtitles (as returned from `parse()`) to SRT format - returned as a string.
+
+### `conform( subtitles )`
+
+Conform array of subtitles according to style guide.
+
+Returns `{subtitles, problems}`.
+
+`subtitles` is array of subtitle objects with as many problems as possible fixed.
+
+`problems` is array of problems encounters (same form as returned by `parse()`). `.canFix` is `false` if could not fully solve the problem.
+
+### `msToTimecode( ms )`
+
+Convert milliseconds to SRT-format timecode.
+
+e.g. `msToTimecode( 62500 ) === '00:01:02,500'`
+
+### `detectBom( buf )`
+
+Give a file's contents as a `Buffer`, detect if it begins with a BOM.
+
+If a BOM is found, its type is returned - `'utf8'`, `'uft16le'` or `'utf16be'`.
+
+If no BOM is detected, returns `null`.
+
+### `fileBufferToString( buf, bomType )`
+
+Converts a file contents `Buffer` to string, taking into account the BOM.
+
+Using `detectBom()` and `fileBufferToString()` together allow reading UTF8 and UTF16 SRT files in a form which can then be passed to `parse()`.
 
 ## Versioning
 
