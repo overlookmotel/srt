@@ -1,0 +1,54 @@
+{
+  "name": "@overlookmotel/srt",
+  "version": "0.0.0",
+  "description": "SRT subtitling utilities",
+  "main": "index.js",
+  "files": [
+    "lib/**/*.js"
+  ],
+  "author": {
+    "name": "Overlook Motel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/overlookmotel/srt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/overlookmotel/srt/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@overlookmotel/eslint-config": "^7.2.1",
+    "@overlookmotel/eslint-config-jest": "^4.1.1",
+    "@overlookmotel/eslint-config-node": "^2.1.2",
+    "coveralls": "^3.1.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^23.20.0",
+    "eslint-plugin-node": "^11.1.0",
+    "jest": "^26.6.3",
+    "jest-extended": "^0.11.5"
+  },
+  "keywords": [
+    "subtitle",
+    "srt"
+  ],
+  "scripts": {
+    "test": "npm run lint && npm run test-main",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "test-main": "jest",
+    "cover": "npm run cover-main && rm -rf coverage",
+    "coveralls": "npm run cover-main && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",
+    "cover-main": "cross-env COVERAGE=true jest --coverage",
+    "ci": "if [ $COVERAGE ]; then npm run coveralls; else npm test; fi"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "readmeFilename": "README.md",
+  "license": "MIT"
+}
