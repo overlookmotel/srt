@@ -16,7 +16,7 @@ This module is intended for my personal use. It works, but has no tests at prese
 
 Parse SRT file as a string.
 
-It aims to be as liberal as possible and
+It aims to be as liberal as possible but report problems which could cause the SRT not to be correctly parsed by other programs.
 
 Returns `{subtitles, problems, srt}`.
 
