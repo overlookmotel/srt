@@ -35,3 +35,9 @@ Breaking changes:
 Docs:
 
 * Changelog fix formatting
+
+## 0.2.1
+
+Docs:
+
+* Fix NPM badge link [fix]
