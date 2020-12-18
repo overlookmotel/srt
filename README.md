@@ -1,4 +1,4 @@
-[![NPM version](https://img.shields.io/npm/v/srt.svg)](https://www.npmjs.com/package/srt)
+[![NPM version](https://img.shields.io/npm/v/@overlookmotel/srt.svg)](https://www.npmjs.com/package/@overlookmotel/srt)
 [![Build Status](https://img.shields.io/travis/overlookmotel/srt/master.svg)](http://travis-ci.org/overlookmotel/srt)
 [![Dependency Status](https://img.shields.io/david/overlookmotel/srt.svg)](https://david-dm.org/overlookmotel/srt)
 [![Dev dependency Status](https://img.shields.io/david/dev/overlookmotel/srt.svg)](https://david-dm.org/overlookmotel/srt)
