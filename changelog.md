@@ -25,3 +25,13 @@ Docs:
 Bug fixes:
 
 * Remove undefined `timecodeToMs` export
+
+## 0.2.0
+
+Breaking changes:
+
+* Minimum subtitle duration 800ms
+
+Docs:
+
+* Changelog fix formatting
