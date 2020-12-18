@@ -19,3 +19,9 @@ Tests:
 Docs:
 
 * Fix changelog
+
+## 0.1.3
+
+Bug fixes:
+
+* Remove undefined `timecodeToMs` export [fix]
