@@ -8,7 +8,7 @@
 
 Bug fixes:
 
-* Fix `conform` function [fix]
+* Fix `conform` function
 
 ## 0.1.2
 
@@ -24,4 +24,4 @@ Docs:
 
 Bug fixes:
 
-* Remove undefined `timecodeToMs` export [fix]
+* Remove undefined `timecodeToMs` export
