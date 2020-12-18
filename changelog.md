@@ -47,3 +47,9 @@ Docs:
 Docs:
 
 * README fix missing text [fix]
+
+## 0.2.3
+
+Bug fixes:
+
+* `parse()` accept multiple line breaks at end of file
