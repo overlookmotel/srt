@@ -41,3 +41,9 @@ Docs:
 Docs:
 
 * Fix NPM badge link [fix]
+
+## 0.2.2
+
+Docs:
+
+* README fix missing text [fix]
