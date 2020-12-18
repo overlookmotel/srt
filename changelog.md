@@ -53,3 +53,9 @@ Docs:
 Bug fixes:
 
 * `parse()` accept multiple line breaks at end of file
+
+## 0.2.4
+
+Improvements:
+
+* `conform()` remove `&nbsp;`
