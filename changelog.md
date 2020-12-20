@@ -59,3 +59,9 @@ Bug fixes:
 Improvements:
 
 * `conform()` remove `&nbsp;`
+
+## 0.2.5
+
+Improvements:
+
+* `confom` ignore square brackets
