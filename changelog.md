@@ -65,3 +65,13 @@ Improvements:
 Improvements:
 
 * `confom` ignore square brackets
+
+## 0.2.6
+
+Features:
+
+* `conform` remove HTML and SRT formatting
+
+Docs:
+
+* Changelog fix formatting

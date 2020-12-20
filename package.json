@@ -1,6 +1,6 @@
 {
   "name": "@overlookmotel/srt",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "SRT subtitling utilities",
   "main": "index.js",
   "files": [
