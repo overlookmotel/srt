@@ -75,3 +75,9 @@ Features:
 Docs:
 
 * Changelog fix formatting
+
+## 0.2.7
+
+Features:
+
+* `conform` `minMsPerChar` option
