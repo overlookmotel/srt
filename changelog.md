@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.2.8
+
+Bug fixes:
+
+* `detectBom` return `null` if no BOM [fix]
+
+Dependencies:
+
+* Update `lodash` dependency
+
+Dev:
+
+* Update dev dependencies
+
+Docs:
+
+* Reverse changelog order
+* Update license year
+
 ## 0.2.7
 
 Features:
